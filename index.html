@@ -1,455 +1,68 @@
-
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Portfolio Restu Suryana — Web Developer and Visual Storyteller.">
-
-    <title>Restu Suryana — Portfolio</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10110f"><meta name="description" content="Restu Suryana — Developer building useful digital systems, with an eye for visual storytelling.">
+  <title>Restu Suryana — Developer & Visual Storyteller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Restu home">R<span>.</span></a>
+    <nav class="nav" id="nav"><a href="#work">Work</a><a href="#about">About</a><a href="#visuals">Visuals</a><a class="nav-cta" href="#contact">Let's talk <span>↗</span></a></nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
 
-    <div class="page-loader" id="pageLoader">
-        <span>RESTU.</span>
-    </div>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-meta"><span>INDEPENDENT DEVELOPER</span><span class="availability"><b></b> OPEN TO OPPORTUNITIES</span><span>BASED IN INDONESIA · 2026</span></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">HEY, I'M RESTU SURYANA <span>—</span></p>
+          <h1>Turning ideas<br>into <em>working</em><br>systems<span class="lime">.</span></h1>
+          <p class="hero-lead">I build web applications that solve real problems. Outside the code, I tell stories through cinematography, photography, and color.</p>
+          <div class="hero-actions"><a class="btn-primary" href="#work">Explore selected work <span>↘</span></a><a class="under-link" href="#about">A little about me <span>↗</span></a></div>
+        </div>
+        <div class="hero-side">
+          <div class="portrait-wrap"><img src="images/my-port.jpeg" alt="Portrait of Restu Suryana"><span class="portrait-cross">+</span></div>
+          <div class="side-note"><span class="side-line"></span><p>LOGIC IN THE BACKEND.<br><strong>FEELING IN THE FRAME.</strong></p></div>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-mark">↓</span><span>01 / 05</span></div>
+    </section>
 
-    <header class="header">
-        <a href="#home" class="logo">RESTU<span>.</span></a>
+    <section class="intro-band"><div class="wrap intro-inner"><span class="mono">A SIMPLE PRINCIPLE</span><p>Good technology should feel <em>effortless.</em><br>Good visuals should make you <em>feel something.</em></p></div></section>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
-            <span></span>
-            <span></span>
-        </button>
+    <section class="section wrap" id="work">
+      <div class="section-top"><span class="section-no">01 / SELECTED WORK</span><span class="mono">BUILDING USEFUL THINGS</span></div>
+      <div class="section-heading-row"><h2>Selected<br><span>projects.</span></h2><p>A few ongoing explorations in web development, workflow design, and practical problem-solving.</p></div>
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-preview preview-inventory"><div class="preview-top"><span>SPAREPART / OVERVIEW</span><span>01—03</span></div><div class="preview-ui"><aside><b></b><i></i><i></i><i></i></aside><div class="preview-main"><div class="preview-title">Inventory overview</div><div class="metric-row"><div><small>TOTAL ITEMS</small><strong>1,248</strong></div><div><small>LOW STOCK</small><strong>08</strong></div><div><small>REQUESTS</small><strong>24</strong></div></div><div class="fake-table"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="preview-caption">INTERFACE STUDY / CONCEPTUAL PREVIEW</span></div>
+          <div class="project-detail"><div class="project-index">01 <span>PERSONAL PROJECT · IN DEVELOPMENT</span></div><h3>Spare Part<br>Management System</h3><p>A web-based inventory workflow for tracking stock, recording incoming and outgoing items, and letting employees request spare parts from their phones.</p><div class="stack"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span></div><span class="project-foot">IN DEVELOPMENT <b>↗</b></span></div>
+        </article>
+        <article class="project-card reverse">
+          <div class="project-preview preview-report"><div class="preview-top"><span>E-REPORT / OPERATIONS</span><span>02—03</span></div><div class="report-ui"><div class="report-head"><span>Weekly activity</span><b>01—07</b></div><div class="bars"><i style="--h:35%"></i><i style="--h:59%"></i><i style="--h:45%"></i><i style="--h:77%"></i><i style="--h:53%"></i><i style="--h:92%"></i><i style="--h:68%"></i></div><div class="days"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div></div><span class="preview-caption">DASHBOARD STUDY / CONCEPTUAL PREVIEW</span></div>
+          <div class="project-detail"><div class="project-index">02 <span>WEB APPLICATION</span></div><h3>E-Report<br>Management</h3><p>An operational reporting platform designed to organize daily reports, simplify submissions, and turn activity records into readable dashboard insights.</p><div class="stack"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Chart.js</span></div><span class="project-foot">REPORTING SYSTEM <b>↗</b></span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-preview preview-restaurant"><div class="restaurant-ui"><span class="resto-label">BAROKAH SEJATI / ONLINE</span><strong>Good food.<br><i>Good moments.</i></strong><div class="resto-bottom"><span>EXPLORE MENU</span><span>↗</span></div></div><span class="preview-caption">WEB EXPERIENCE / CONCEPTUAL PREVIEW</span></div>
+          <div class="project-detail"><div class="project-index">03 <span>WEB APPLICATION</span></div><h3>Restaurant<br>Ordering System</h3><p>A restaurant ordering experience connecting digital menus, cart and checkout, order status, and day-to-day admin operations.</p><div class="stack"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span></div><span class="project-foot">FOOD & COMMERCE <b>↗</b></span></div>
+        </article>
+      </div>
+    </section>
 
-        <nav class="nav" id="navigation">
-            <a href="#about">About</a>
-            <a href="#work">Selected Work</a>
-            <a href="#approach">Approach</a>
-            <a href="#contact" class="nav-contact">Let's Talk <span>↗</span></a>
-        </nav>
-    </header>
+    <section class="about-section" id="about"><div class="wrap about-grid"><div><div class="section-top"><span class="section-no">02 / ABOUT</span><span class="mono">A BIT OF CONTEXT</span></div><h2>Curious by<br>nature<span class="lime">.</span><br><span class="dim">Builder by choice.</span></h2></div><div class="about-copy"><p class="about-lead">I’m interested in how things work — and how they can work better.</p><p>My approach to development starts with understanding the problem, mapping the workflow, and building something people can actually use. I’m especially drawn to web applications, internal tools, and systems that make everyday work simpler.</p><p>When I step away from the screen, I usually bring a camera. Cinematography and color grading give me another way to think about composition, detail, and the feeling behind a finished piece.</p><div class="about-facts"><div><span>01</span><b>Problem solving</b></div><div><span>02</span><b>Web development</b></div><div><span>03</span><b>Visual storytelling</b></div></div></div></div></section>
 
-    <main>
+    <section class="section wrap" id="visuals"><div class="section-top"><span class="section-no">03 / VISUAL STUDIES</span><span class="mono">BEHIND THE LENS</span></div><div class="section-heading-row visual-heading"><h2>Frames &<br><span>feelings.</span></h2><p>Color, light, and the small details that shape how a moment is remembered.</p></div><div class="visual-grid"><article class="visual-feature"><div class="visual-image"><img src="images/travel.jpeg" alt="Color grading study, cinematic portrait"></span></div><div class="visual-caption"><h3>Color study — Final look</h3></div></article><div class="visual-note-card"><span class="mono">A DIFFERENT KIND OF PROCESS</span><p>Not every idea needs an interface. Sometimes, all it takes is a frame, a shift in color, and a point of view.</p></div></div><p class="visual-disclaimer">Selected visual work. More frames and travel studies will be added as the collection grows.</p></section>
 
-        <!-- HERO -->
-        <section class="hero section" id="home">
-            <div class="hero-top">
-                <span class="eyebrow">PORTFOLIO / 2026</span>
-                <span class="eyebrow">WEB DEVELOPMENT & VISUAL STORYTELLING</span>
-            </div>
+    <section class="stack-section"><div class="wrap"><div class="section-top"><span class="section-no">04 / TOOLKIT</span><span class="mono">TOOLS, NOT THE IDENTITY</span></div><div class="tool-grid"><div><span class="tool-label">01 — DEVELOPMENT</span><h3>Build</h3><p>HTML & CSS<br>JavaScript<br>PHP / Laravel<br>MySQL</p></div><div><span class="tool-label">02 — CREATIVE</span><h3>Make</h3><p>Cinematography<br>Photography<br>Video Editing<br>Color Grading</p></div><div><span class="tool-label">03 — WORKFLOW</span><h3>Ship</h3><p>VS Code<br>Git & GitHub<br>Figma</p></div></div></div></section>
 
-            <div class="hero-content">
-                <div class="hero-copy">
-                    <p class="intro-label">Hello, I'm Restu —</p>
-
-                    <h1>
-                        Building for the web.<br>
-                        Seeing through <em>the lens.</em>
-                    </h1>
-
-                    <p class="hero-description">
-                        I build digital experiences and explore stories
-                        through visuals, photography, and moving images.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a href="#work" class="button-primary">
-                            Explore my work <span>↗</span>
-                        </a>
-                        <a href="#about" class="text-link">More about me ↓</a>
-                    </div>
-                </div>
-
-                <div class="hero-image">
-                    <div class="image-frame">
-                        <!-- GANTI FOTO DI SINI -->
-                        <img src="images/my-port.jpeg" alt="Portrait of Restu Suryana">
-                    </div>
-                    <div class="image-caption">
-                        <span>01 / PERSONAL PORTRAIT</span>
-                        <span>INDONESIA</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-bottom">
-                <span>INDEPENDENT DEVELOPER & CREATIVE THINKER</span>
-                <span>SCROLL TO EXPLORE ↓</span>
-            </div>
-        </section>
-
-        <!-- INTRODUCTION -->
-        <section class="about section" id="about">
-            <div class="section-heading">
-                <span class="eyebrow">01 — ABOUT</span>
-                <span class="eyebrow">A LITTLE INTRODUCTION</span>
-            </div>
-
-            <div class="about-content">
-                <h2>
-                    Not just about writing code.
-                    It's about understanding
-                    <em>what makes things work.</em>
-                </h2>
-
-                <div class="about-description">
-                    <p>
-                        I'm Restu, a developer with an interest in building
-                        practical digital solutions. I enjoy turning ideas
-                        into functional websites, exploring how systems work,
-                        and finding better ways to solve everyday problems.
-                    </p>
-
-                    <p>
-                        Outside the screen, I'm drawn to cinematography,
-                        photography, and color grading. I like the idea of
-                        telling stories through frames — capturing moments
-                        and giving them a visual perspective.
-                    </p>
-
-                    <a href="#contact" class="text-link">Get in touch ↗</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- WORK -->
-        <section class="work section" id="work">
-            <div class="section-heading">
-                <span class="eyebrow">02 — SELECTED WORK</span>
-                <span class="eyebrow">A COLLECTION OF PROJECTS</span>
-            </div>
-
-            <div class="work-intro">
-                <h2>Things I've<br><em>worked on.</em></h2>
-                <p>
-                    A selection of projects that reflect my interest
-                    in development, systems, and problem-solving.
-                </p>
-            </div>
-
-            <!-- PROJECT 01 -->
-            <article class="project">
-                <div class="project-visual inventory-visual">
-                    <div class="mock-window">
-                        <div class="mock-header">
-                            <span>INVENTORY / DASHBOARD</span>
-                            <span>01</span>
-                        </div>
-
-                        <div class="mock-body">
-                            <div class="mock-sidebar">
-                                <span class="active"></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                            <div class="mock-content">
-                                <div class="mock-title"></div>
-                                <div class="mock-stats">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                                <div class="mock-table">
-                                    <span></span><span></span>
-                                    <span></span><span></span>
-                                    <span></span><span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="visual-note">CONCEPTUAL INTERFACE</span>
-                </div>
-
-                <div class="project-info">
-                    <div class="project-meta">
-                        <span>01 / PERSONAL PROJECT</span>
-                        <span>IN DEVELOPMENT</span>
-                    </div>
-
-                    <h3>Spare Part<br>Management System</h3>
-
-                    <p>
-                        An inventory management system designed to simplify
-                        stock monitoring, material transactions, and employee
-                        item requests through a web-based workflow.
-                    </p>
-
-                    <div class="tags">
-                        <span>Laravel</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <span class="project-status">Personal project · In development</span>
-                </div>
-            </article>
-
-            <!-- PROJECT 02 -->
-            <article class="project reverse">
-                <div class="project-visual report-visual">
-                    <div class="report-card">
-                        <div class="report-top">
-                            <span>OPERATIONAL REPORT</span>
-                            <span>WEEKLY OVERVIEW</span>
-                        </div>
-
-                        <div class="report-number">
-                            <small>REPORT SUMMARY</small>
-                            <strong>01—07</strong>
-                            <span>Weekly monitoring</span>
-                        </div>
-
-                        <div class="report-chart">
-                            <div style="height:35%"></div>
-                            <div style="height:60%"></div>
-                            <div style="height:45%"></div>
-                            <div style="height:80%"></div>
-                            <div style="height:55%"></div>
-                            <div style="height:95%"></div>
-                            <div style="height:70%"></div>
-                        </div>
-
-                        <div class="report-footer">
-                            <span>MON</span><span>TUE</span><span>WED</span>
-                            <span>THU</span><span>FRI</span><span>SAT</span>
-                            <span>SUN</span>
-                        </div>
-                    </div>
-                    <span class="visual-note">CONCEPTUAL INTERFACE</span>
-                </div>
-
-                <div class="project-info">
-                    <div class="project-meta">
-                        <span>02 / WEB APPLICATION</span>
-                        <span>REPORTING SYSTEM</span>
-                    </div>
-
-                    <h3>E-Report<br>Management</h3>
-
-                    <p>
-                        A web-based reporting platform focused on recording
-                        operational activities, organizing reports, and
-                        presenting information through a structured dashboard.
-                    </p>
-
-                    <div class="tags">
-                        <span>Laravel</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>Chart.js</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT 03 -->
-            <article class="project">
-                <div class="project-visual restaurant-visual">
-                    <div class="restaurant-card">
-                        <div class="restaurant-brand">BAROKAH SEJATI<span>.</span></div>
-                        <div class="restaurant-heading">Good food,<br><em>good moments.</em></div>
-                        <div class="restaurant-menu">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="restaurant-bottom">EXPLORE OUR MENU ↗</div>
-                    </div>
-                    <span class="visual-note">CONCEPTUAL INTERFACE</span>
-                </div>
-
-                <div class="project-info">
-                    <div class="project-meta">
-                        <span>03 / WEB APPLICATION</span>
-                        <span>FOOD & COMMERCE</span>
-                    </div>
-
-                    <h3>Restaurant<br>Ordering System</h3>
-
-                    <p>
-                        A restaurant ordering platform that brings together
-                        digital menus, shopping cart, checkout, order tracking,
-                        and an administrative dashboard.
-                    </p>
-
-                    <div class="tags">
-                        <span>Laravel</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <!-- APPROACH -->
-        <section class="approach section" id="approach">
-            <div class="section-heading">
-                <span class="eyebrow">03 — APPROACH</span>
-                <span class="eyebrow">HOW I THINK & WORK</span>
-            </div>
-
-            <div class="approach-content">
-                <h2>
-                    Good work starts<br>
-                    with <em>good questions.</em>
-                </h2>
-
-                <div class="approach-list">
-                    <div class="approach-item">
-                        <span>01</span>
-                        <div>
-                            <h3>Understand the problem</h3>
-                            <p>
-                                Before building anything, I want to understand
-                                what needs to be solved and why it matters.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="approach-item">
-                        <span>02</span>
-                        <div>
-                            <h3>Build with purpose</h3>
-                            <p>
-                                I value solutions that are functional,
-                                straightforward, and useful in real situations.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="approach-item">
-                        <span>03</span>
-                        <div>
-                            <h3>Pay attention to details</h3>
-                            <p>
-                                From system logic to visual presentation,
-                                small details shape the overall experience.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- TOOLBOX -->
-        <section class="toolbox section">
-            <div class="section-heading">
-                <span class="eyebrow">04 — TOOLBOX</span>
-                <span class="eyebrow">TOOLS I WORK WITH</span>
-            </div>
-
-            <div class="toolbox-content">
-                <h2>My current<br><em>toolbox.</em></h2>
-
-                <div class="toolbox-grid">
-                    <div class="tool-group">
-                        <span>DEVELOPMENT</span>
-                        <p>HTML / CSS</p>
-                        <p>JavaScript</p>
-                        <p>PHP / Laravel</p>
-                        <p>MySQL</p>
-                    </div>
-
-                    <div class="tool-group">
-                        <span>VISUAL</span>
-                        <p>Photography</p>
-                        <p>Cinematography</p>
-                        <p>Video Editing</p>
-                        <p>Color Grading</p>
-                    </div>
-
-                    <div class="tool-group">
-                        <span>WORKFLOW</span>
-                        <p>Visual Studio Code</p>
-                        <p>Git / GitHub</p>
-                        <p>Figma</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- BEYOND THE CODE -->
-        <section class="beyond section">
-            <div class="section-heading">
-                <span class="eyebrow">05 — BEYOND THE CODE</span>
-                <span class="eyebrow">ANOTHER WAY TO CREATE</span>
-            </div>
-
-            <div class="beyond-content">
-                <div class="beyond-copy">
-                    <h2>
-                        Some stories<br>
-                        are better told<br>
-                        <em>through a frame.</em>
-                    </h2>
-
-                    <p>
-                        I enjoy observing places, capturing moments,
-                        and shaping them into visual stories. For me,
-                        cinematography is another way to communicate
-                        without having to say too much.
-                    </p>
-
-                    <p>
-                        From composition to color grading, every detail
-                        contributes to the feeling of a scene.
-                    </p>
-                </div>
-
-                <div class="beyond-visual">
-                    <div class="film-placeholder">
-                        <span>VISUAL JOURNAL</span>
-                        <strong>FRAME<br>BY FRAME.</strong>
-                        <small>PHOTOGRAPHY / TRAVEL / FILM</small>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section class="contact section" id="contact">
-            <span class="eyebrow">06 — CONTACT</span>
-
-            <div class="contact-content">
-                <p>HAVE A PROJECT OR JUST WANT TO SAY HELLO?</p>
-
-                <h2>
-                    Let's make<br>
-                    something <em>meaningful.</em>
-                </h2>
-                <a href="mailto:restusuryanar@gmail.com" class="contact-link">
-                    restusuryanar@gmail.com <span>↗</span>
-                </a>
-            </div>
-
-            <div class="social-links">
-                <!-- GANTI LINK SOSIAL MEDIA -->
-                <a href="https://github.com/restusuryanaaa" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-                <a href="https://linkedin.com/in/restusuryanaalalaa" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-                <a href="https://instagram.com/restusuryanaa4173" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <a href="#home" class="logo">RESTU<span>.</span></a>
-        <span>DESIGNED & BUILT WITH LOVE.</span>
-        <span>© <span id="year"></span> RESTU SURYANA AL'ALA'A</span>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <section class="contact-section wrap" id="contact"><div class="section-top"><span class="section-no">05 / CONTACT</span><span class="mono">HAVE SOMETHING IN MIND?</span></div><p class="contact-kicker">LET'S BUILD SOMETHING USEFUL.</p><h2>Have an idea?<br><span>Let's make it real.</span></h2><a class="contact-email" href="mailto:restusuryanar@gmail.com">restusuryanar@gmail.com <b>↗</b></a><div class="social-row"><a href="https://github.com/restusuryanaaa" target="_blank" rel="noopener">GITHUB ↗</a><a href="https://linkedin.com/in/restusuryanaalalaa" target="_blank" rel="noopener">LINKEDIN ↗</a><a href="https://instagram.com/restusuryanaa4173" target="_blank" rel="noopener">INSTAGRAM ↗</a></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#top">R<span>.</span></a><span>DESIGNED & BUILT BY RESTU SURYANA</span><span>© <b id="year"></b></span></footer>
+  <script src="script.js"></script>
+</body></html>

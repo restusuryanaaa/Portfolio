@@ -1,68 +1,33 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
 
-document.addEventListener("DOMContentLoaded", () => {
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuBtn.classList.toggle('active', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
 
-    // Loading screen
-    const loader = document.getElementById("pageLoader");
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuBtn.classList.remove('active');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
 
-    window.addEventListener("load", () => {
-        loader.classList.add("loaded");
-    });
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Fallback if the load event has already fired
-    if (document.readyState === "complete") {
-        loader.classList.add("loaded");
-    }
-
-    // Mobile navigation
-    const menuToggle = document.getElementById("menuToggle");
-    const navigation = document.getElementById("navigation");
-
-    menuToggle.addEventListener("click", () => {
-        const isOpen = navigation.classList.toggle("open");
-
-        menuToggle.classList.toggle("active", isOpen);
-        menuToggle.setAttribute("aria-expanded", isOpen);
-    });
-
-    // Close menu after clicking a navigation link
-    navigation.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-            navigation.classList.remove("open");
-            menuToggle.classList.remove("active");
-            menuToggle.setAttribute("aria-expanded", "false");
-        });
-    });
-
-    // Dynamic copyright year
-    document.getElementById("year").textContent =
-        new Date().getFullYear();
-
-    // Scroll reveal
-    const revealElements = document.querySelectorAll(
-        ".section-heading, .about-content, .work-intro, .project, .approach-content, .toolbox-content, .beyond-content, .contact-content"
-    );
-
-    revealElements.forEach(element => {
-        element.classList.add("reveal");
-    });
-
-    if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.12
-        });
-
-        revealElements.forEach(element => observer.observe(element));
-    } else {
-        revealElements.forEach(element => {
-            element.classList.add("visible");
-        });
-    }
-
+  // Reveal only content blocks; keep the page readable if JS is unavailable.
+  const targets = document.querySelectorAll('.project-card, .about-copy, .visual-feature, .visual-note-card, .tool-grid > div');
+  if ('IntersectionObserver' in window) {
+    targets.forEach(el => el.classList.add('will-reveal'));
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    targets.forEach(el => observer.observe(el));
+  }
 });
